@@ -1,0 +1,22 @@
+cabal-version:      2.4
+name:               Video2Anim
+version:            0.0.1
+synopsis:           final project for Haskell Dev Pro course from Emurgo Academy
+description:        video manipulation application that adds effects to each frame individually, giving an animated feel (similar to "Undone" tv series production)
+bug-reports:        https://github.com/DeCentN2Madness/Video2Anim/issues
+license:            Unlicense
+license-file:       Copying
+author:             Jeff "DeCentN2Madness" Hales
+maintainer:         7983+DeCentN2Madness@users.noreply.github.com
+copyright:          none
+category:           Education
+extra-source-files: CHANGELOG.md
+
+executable Video2Anim
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    other-extensions: OverloadedStrings
+    build-depends:    base ^>=4.15,
+                      mtl,
+                      text
+    default-language: Haskell2010
